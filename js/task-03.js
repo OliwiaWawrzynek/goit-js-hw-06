@@ -17,7 +17,7 @@ const galleryList = document.querySelector('.gallery');
 
 const galleryImages = images
     .map((e) =>
-        `<li style="padding: 30px; list-style: none; display: inline-flex;" ><img height="300" width="450" src="${e.url}" alt="${e.alt} "style="border: solid rgb(147, 118, 72) 10px"/></li>`)
+        `<li><img class="gallery__image" height="300" width="450" src="${e.url}" alt="${e.alt}"/></li>`)
     .join("");
 
 galleryList.insertAdjacentHTML('afterbegin', galleryImages);
